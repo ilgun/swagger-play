@@ -7,6 +7,9 @@ val PlayVersion = "2.8.1"
 val SwaggerVersion = "1.6.0"
 val Specs2Version = "4.8.3"
 
+githubOwner := "ilgun"
+githubRepository := "swagger-play2"
+
 libraryDependencies ++= Seq(
   "com.typesafe.play" %% "play" % PlayVersion,
   "com.typesafe.play" %% "routes-compiler" % PlayVersion,
