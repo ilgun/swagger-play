@@ -68,6 +68,8 @@ In your controller for, say your "pet" resource:
 
 ```
 
+Also make sure you annotate the controller with @Api
+
 What this does is the following:
 
 * Tells swagger that the methods in this controller should be described under the `/api-docs/pet` path
