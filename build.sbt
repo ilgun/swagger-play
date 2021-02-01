@@ -1,6 +1,6 @@
 name := "swagger-play2"
 organization := "com.github.ilgun"
-
+version := "3.0.0-SNAPSHOT"
 scalaVersion := "2.13.1"
 
 val PlayVersion = "2.8.1"
@@ -8,7 +8,8 @@ val SwaggerVersion = "1.6.0"
 val Specs2Version = "4.8.3"
 
 githubOwner := "ilgun"
-githubRepository := "swagger-play2"
+githubRepository := "swagger-play"
+githubTokenSource := TokenSource.GitConfig("github.token")
 
 libraryDependencies ++= Seq(
   "com.typesafe.play" %% "play" % PlayVersion,
@@ -79,27 +80,3 @@ pomExtra := {
     </developer>
   </developers>
 }
-
-publishTo := sonatypePublishTo.value
-
-publishArtifact in Test := false
-pomIncludeRepository := { _ => false }
-publishMavenStyle := true
-releaseCrossBuild := true
-
-import sbtrelease.ReleasePlugin.autoImport.ReleaseTransformations._
-
-releaseProcess := Seq[ReleaseStep](
-  checkSnapshotDependencies,
-  inquireVersions,
-  runClean,
-  runTest,
-  setReleaseVersion,
-  commitReleaseVersion,
-  tagRelease,
-  releaseStepCommandAndRemaining("+publishSigned"),
-  setNextVersion,
-  commitNextVersion,
-  releaseStepCommand("sonatypeReleaseAll"),
-  pushChanges
-)
