@@ -4,7 +4,7 @@
 Forked from https://github.com/swagger-api/swagger-play to bring Play 2.8.x support
 
 
-This branch (`master`) holds the latest version (major version `2.x`) for latest play version supported (`2.7`); branch [play-2.6](https://github.com/swagger-api/swagger-play/tree/play-2.6) holds the swagger-play version for play `2.6` version (major.minor version `1.6.x`).
+This branch (`master`) holds the latest version (major version `2.x`) for latest play version supported (`2.8`); branch [play-2.6](https://github.com/swagger-api/swagger-play/tree/play-2.6) holds the swagger-play version for play `2.6` version (major.minor version `1.6.x`).
 
 Older versions are available though not anymore supported in the [archive](https://github.com/swagger-api/swagger-play/tree/archive) branch.
 
