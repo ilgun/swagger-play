@@ -1,5 +1,5 @@
 name := "swagger-play2"
-organization := "io.swagger"
+organization := "com.github.ilgun"
 
 scalaVersion := "2.13.1"
 
