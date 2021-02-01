@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/swagger-api/swagger-play.svg?branch=master)](https://travis-ci.org/swagger-api/swagger-play)
-
 # Swagger Play2 Module
 
 ## Note
+Forked from https://github.com/swagger-api/swagger-play to bring Play 2.8.x support
+
 
 This branch (`master`) holds the latest version (major version `2.x`) for latest play version supported (`2.7`); branch [play-2.6](https://github.com/swagger-api/swagger-play/tree/play-2.6) holds the swagger-play version for play `2.6` version (major.minor version `1.6.x`).
 
@@ -14,18 +14,6 @@ This is a module to support Swagger annotations within [Play Framework](http://w
 
 We also would like to support Swagger 2.0 in the future and contributions to that end will be gladly accepted.
 
-
-### New and Noteworthy
- 
- - Minimal dependencies: only depends on the core Play module, so it won't bring unnecessary dependencies on the Akka HTTP server or anything else from Play.
- - `SwaggerPlugin` no longer depends on on `Application`.
- - Correct `Content-Length` generation for JSON (originally proposed in https://github.com/swagger-api/swagger-play/pull/176)
- - No longer uses deprecated Play configuration methods (proposed in https://github.com/swagger-api/swagger-play/pull/162). Also uses `reference.conf` for default values.
- - Clarifies compile-time DI docs (proposed in https://github.com/swagger-api/swagger-play/pull/157)
- - Handle route delegation properly (https://github.com/swagger-api/swagger-play/pull/132 updated for Play 2.6)
- - Add support for `dataTypeClass` in `ApiImplicitParam` (https://github.com/swagger-api/swagger-play/pull/174)
- - Add support for API keys (https://github.com/swagger-api/swagger-play/pull/117)
- - Add support for OAuth2 (https://github.com/swagger-api/swagger-play/pull/183)
 
 ## Usage
 
